@@ -1,6 +1,6 @@
   
 """
-Python (Keras) implemenation of AReLU activation function used in 
+Python (Keras) implemenation of ALReLU activation function used in 
 "ALReLU: A different approach on Leaky ReLU activation function
 to improve Neural Networks Performance" 
 https://arxiv.org/abs/2012.07564?context=cs.LG

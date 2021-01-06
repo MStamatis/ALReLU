@@ -1,2 +1,2 @@
 # AReLU
-AReLU activation function implementation in python
+AReLU activation function implementation in python (Keras)

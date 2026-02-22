@@ -80,30 +80,3 @@ Build package:
 ```bash
 python -m build
 ```
-
-## Publish to PyPI
-
-1. Bump version in `pyproject.toml` and `src/alrelu_torch/version.py`.
-2. Build distributions:
-
-```bash
-python -m build
-```
-
-3. Validate metadata:
-
-```bash
-python -m twine check dist/*
-```
-
-4. Upload to TestPyPI (recommended first):
-
-```bash
-python -m twine upload --repository testpypi dist/*
-```
-
-5. Upload to PyPI:
-
-```bash
-python -m twine upload dist/*
-```

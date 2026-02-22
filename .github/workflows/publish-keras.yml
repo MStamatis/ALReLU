@@ -1,0 +1,38 @@
+name: Publish Keras Package
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "keras-v*"
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    name: Build and publish alrelu-keras
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install build dependencies
+        run: python -m pip install --upgrade pip build twine
+
+      - name: Build package
+        run: python -m build
+
+      - name: Check distributions
+        run: python -m twine check dist/*
+
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          packages-dir: dist

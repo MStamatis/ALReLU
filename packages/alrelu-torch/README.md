@@ -9,6 +9,14 @@ Formula:
 
 `ALReLU(x, alpha) = max(abs(alpha * x), x)`
 
+## Reference
+
+ALReLU paper:
+
+`ALReLU: A different approach on Leaky ReLU activation function to improve Neural Networks Performance`
+
+https://arxiv.org/abs/2012.07564
+
 ## Installation
 
 After publishing:

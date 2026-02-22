@@ -38,8 +38,8 @@ Scripts:
 
 Direct links:
 
-- https://github.com/stamatis/ALReLU/blob/main/scripts/train_mnist_keras_tf.py
-- https://github.com/stamatis/ALReLU/blob/main/scripts/train_mnist_torch.py
+- https://github.com/MStamatis/ALReLU/blob/main/scripts/train_mnist_keras_tf.py
+- https://github.com/MStamatis/ALReLU/blob/main/scripts/train_mnist_torch.py
 
 Run commands (from repo root):
 

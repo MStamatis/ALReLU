@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "alrelu-torch"
-version = "0.1.1"
+version = "0.1.2"
 description = "ALReLU activation package for PyTorch with fixed and trainable alpha variants."
 readme = "README.md"
 requires-python = ">=3.9"
@@ -38,9 +38,9 @@ dev = [
 ]
 
 [project.urls]
-Repository = "https://github.com/stamatis/ALReLU"
-Homepage = "https://github.com/stamatis/ALReLU/tree/main/packages/alrelu-torch"
-Issues = "https://github.com/stamatis/ALReLU/issues"
+Repository = "https://github.com/MStamatis/ALReLU"
+Homepage = "https://github.com/MStamatis/ALReLU/tree/main/packages/alrelu-torch"
+Issues = "https://github.com/MStamatis/ALReLU/issues"
 
 [tool.setuptools]
 package-dir = { "" = "src" }

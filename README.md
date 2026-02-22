@@ -49,6 +49,30 @@ Code and docs:
 - Package root: `packages/alrelu-torch`
 - PyPI README source: `packages/alrelu-torch/README.md`
 
+## Training Examples (MNIST)
+
+Scripts:
+
+- Keras + TensorFlow: `scripts/train_mnist_keras_tf.py`
+- PyTorch: `scripts/train_mnist_torch.py`
+
+Direct links:
+
+- https://github.com/stamatis/ALReLU/blob/main/scripts/train_mnist_keras_tf.py
+- https://github.com/stamatis/ALReLU/blob/main/scripts/train_mnist_torch.py
+
+Run commands (from repo root):
+
+```bash
+# Keras + TensorFlow
+python scripts/train_mnist_keras_tf.py --epochs 5 --variant fixed --alpha 0.01
+python scripts/train_mnist_keras_tf.py --epochs 5 --variant learnable --alpha 0.01
+
+# PyTorch
+python scripts/train_mnist_torch.py --epochs 5 --variant fixed --alpha 0.01
+python scripts/train_mnist_torch.py --epochs 5 --variant learnable --alpha 0.01
+```
+
 ## License
 
 MIT License (`LICENSE`).

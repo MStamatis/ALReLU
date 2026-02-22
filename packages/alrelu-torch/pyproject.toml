@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "alrelu-torch"
-version = "0.1.0"
+version = "0.1.1"
 description = "ALReLU activation package for PyTorch with fixed and trainable alpha variants."
 readme = "README.md"
 requires-python = ">=3.9"

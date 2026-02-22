@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "alrelu-keras"
-version = "0.1.0"
+version = "0.1.1"
 description = "ALReLU activation package for Keras with fixed and trainable alpha variants."
 readme = "README.keras.md"
 requires-python = ">=3.9"

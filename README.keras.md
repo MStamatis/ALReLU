@@ -19,8 +19,6 @@ https://arxiv.org/abs/2012.07564
 
 ## Installation
 
-After publishing:
-
 ```bash
 pip install alrelu-keras
 ```
@@ -35,6 +33,30 @@ From source:
 
 ```bash
 pip install .
+```
+
+## Training Examples (MNIST)
+
+Scripts:
+
+- Keras + TensorFlow: `scripts/train_mnist_keras_tf.py`
+- PyTorch: `scripts/train_mnist_torch.py`
+
+Direct links:
+
+- https://github.com/stamatis/ALReLU/blob/main/scripts/train_mnist_keras_tf.py
+- https://github.com/stamatis/ALReLU/blob/main/scripts/train_mnist_torch.py
+
+Run commands (from repo root):
+
+```bash
+# Keras + TensorFlow
+python scripts/train_mnist_keras_tf.py --epochs 5 --variant fixed --alpha 0.01
+python scripts/train_mnist_keras_tf.py --epochs 5 --variant learnable --alpha 0.01
+
+# PyTorch
+python scripts/train_mnist_torch.py --epochs 5 --variant fixed --alpha 0.01
+python scripts/train_mnist_torch.py --epochs 5 --variant learnable --alpha 0.01
 ```
 
 ## Usage
